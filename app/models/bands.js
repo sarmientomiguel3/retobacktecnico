@@ -1,31 +1,32 @@
 const {Model} = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-  class Item extends Model {}
-  Item.init({
-    ItemId: {
+  class Band extends Model {}
+  Band.init({
+    BandId: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    ItemCode: {
+    BandName: {
       type: DataTypes.STRING(45),
       allowNull: true
     },
-    ItemName: {
+    BandOrigin: {
       type: DataTypes.STRING(45),
       allowNull: true
     },
-    ItemDescription: {
+    BandGenere: {
       type: DataTypes.STRING(45),
       allowNull: true
     },
   },{
     sequelize,
-    modelName: 'items',
-    tableName: 'items'
+    modelName: 'bands',
+    tableName: 'bands',
+    timestamps: false
   });
-
-  return Item;
+  
+  return Band;
 };

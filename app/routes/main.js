@@ -6,6 +6,8 @@ const router = express.Router({
 });
 
 router.get('/', mapswapi.main);
+router.get('/:set', mapswapi.main);
+router.get('/:set/:id', mapswapi.main);
 
 module.exports = {
   router
