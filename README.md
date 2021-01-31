@@ -19,19 +19,21 @@ https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/
 
 Los path son los mismos a los de SWAPI
 
-### Example
+### Example 1 (Direcciones)
 
+Original
 ````
 https://swapi.dev/api
 https://swapi.dev/api/people
 https://swapi.dev/api/people/1
 ````
-es igual a 
+Traducido
 ````
 https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api
 https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api/people
 https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api/people/1
 ````
+### Example 2 (Resultado)
 
 Original
 ````
@@ -65,8 +67,6 @@ Para ello se creo la ruta
 https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/band
 ````
 
-### Usando GET
-Retorna todos los valores Ingresados
 
 ### Usando POST
 Necesita enviar un JSON con la siguiente Infraestructura
@@ -77,6 +77,37 @@ Necesita enviar un JSON con la siguiente Infraestructura
   "BandOrigin": "Argentina",
   "BandGenere": "heavy metal"
 }
+````
+### Usando GET
+Retorna todos los valores Ingresados
+
+````
+[
+  {
+    "BandId": 1,
+    "BandName": "Rata Blanca",
+    "BandOrigin": "Argentina",
+    "BandGenere": "heavy metal"
+  },
+  {
+    "BandId": 2,
+    "BandName": "Helloween",
+    "BandOrigin": "Alemania",
+    "BandGenere": "power metal"
+  },
+  {
+    "BandId": 3,
+    "BandName": "Rhapsody",
+    "BandOrigin": "Italia",
+    "BandGenere": "power metal"
+  },
+  {
+    "BandId": 4,
+    "BandName": "Stratovarious",
+    "BandOrigin": "Finlandia",
+    "BandGenere": "power metal"
+  }
+]
 ````
 
 ## Herramientas Usadas
