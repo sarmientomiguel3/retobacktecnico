@@ -57,4 +57,5 @@ Necesita enviar un JSON con la siguiente Infraestructura
 - Lambda
 - RBS (Mysql)
 - NodeJs
+- Google Cloud Translation API
 
