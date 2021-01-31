@@ -2,6 +2,7 @@
   "name": "apithree",
   "version": "1.0.0",
   "main": "server.js",
+  "author": "Miguel Sarmiento",
   "license": "MIT",
   "dependencies": {
     "aws-serverless-express": "^3.4.0",
