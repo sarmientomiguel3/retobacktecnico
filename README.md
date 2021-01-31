@@ -23,10 +23,39 @@ Los path son los mismos a los de SWAPI
 
 ````
 https://swapi.dev/api
-es igual a 
-https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api
+https://swapi.dev/api/people
+https://swapi.dev/api/people/1
 ````
-Esto retorna la parte traducida
+es igual a 
+````
+https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api
+https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api/people
+https://zl7io6sg36.execute-api.us-east-2.amazonaws.com/dev/api/people/1
+````
+
+Original
+````
+{
+  "people": "http://swapi.dev/api/people/",
+  "planets": "http://swapi.dev/api/planets/",
+  "films": "http://swapi.dev/api/films/",
+  "species": "http://swapi.dev/api/species/",
+  "vehicles": "http://swapi.dev/api/vehicles/",
+  "starships": "http://swapi.dev/api/starships/"
+}
+````
+
+Traducido
+````
+{
+  "personas": "http://swapi.dev/api/people/",
+  "planetas": "http://swapi.dev/api/planets/",
+  "Película (s": "http://swapi.dev/api/films/",
+  "especies": "http://swapi.dev/api/species/",
+  "vehiculos": "http://swapi.dev/api/vehicles/",
+  "naves estelares": "http://swapi.dev/api/starships/"
+}
+````
 
 ## Modelo con uso de Endpoint POST y GET
 
